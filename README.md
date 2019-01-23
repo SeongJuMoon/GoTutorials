@@ -1,1 +1,1 @@
-# GoTutorials
+# Tour of Go에 대한 예제를 직접 돌려보고 정리한 레포지토리입니다.
