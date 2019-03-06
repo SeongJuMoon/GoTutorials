@@ -19,9 +19,11 @@ func Cbrt(x complex128) complex128 {
 
 	z := x
 
+	// z^3 = x되게하도록 뉴턴의 방법을 사용하여 구했다.
 	// 루핑되어 계속 쪼개지는 z^3가 x의 값과 같아질 때 까지 반복한다.
 	for cmplx.Pow(z, 3) != x {
 		z = z - (z*z*z-x)/(3*z*z)
+		// z = z - (cmplx.pow(z,3)-x)/(3 * cmplx.pow(z,2))
 	}
 
 	return z
